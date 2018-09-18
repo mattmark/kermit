@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - node
+
+branches:
+  only:
+    - master
+
+cahce:
+  yarn: true
+  directories:
+    - node_modules
+
+notifications:
+  email: false
+
+script:
+  - yarn test
