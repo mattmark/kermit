@@ -11,7 +11,7 @@
     "test:watch": "",
     "test:coverage": "cat ./coverage/lcov.info | coveralls",
     "precommit": "lint-staged",
-    "prepush": "yarn test && yarn build"
+    "prepush": "yarn test && yarn lint"
   },
   "lint-staged": {
     "lib/**/*.ts": [
