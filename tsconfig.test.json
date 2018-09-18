@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": [
+    "./lib/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

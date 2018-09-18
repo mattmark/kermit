@@ -6,7 +6,7 @@
   },
   "scripts": {
     "lint": "tslint -t codeFrame 'lib/**/*.ts'",
-    "test": "ts-node node_modules/tape/bin/tape lib/**/*.test.ts | tap-spec",
+    "test": "ts-node --project tsconfig.test.json node_modules/tape/bin/tape lib/**/*.test.ts | tap-spec",
     "test:report": "nyc --reporter=lcov yarn test; nyc report ---reporter=text",
     "test:watch": "",
     "test:coverage": "cat ./coverage/lcov.info | coveralls",
@@ -24,7 +24,7 @@
       "lib/**/*.ts"
     ],
     "exclude": [
-      "lib/**/*.test.js"
+      "lib/**/*.test.ts"
     ],
     "reporter": [
       "lcov",

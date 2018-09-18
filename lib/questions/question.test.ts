@@ -8,7 +8,7 @@ import * as test from "tape"
 test("generateInput", (t: test.Test) => {
   t.plan(2)
 
-  t.test("should return an input question when Input value is undefined", assert => {
+  t.test("should return an input question when Input value is undefined", (assert: test.Test) => {
     // Arrange
     const input: Input = {
       name: "input",
@@ -30,7 +30,7 @@ test("generateInput", (t: test.Test) => {
     assert.end()
   })
 
-  t.test("should return undefined when Input value is defined", assert => {
+  t.test("should return undefined when Input value is defined", (assert: test.Test) => {
     // Arrange
     const input: Input = {
       name: "input",
@@ -53,7 +53,7 @@ test("generateInput", (t: test.Test) => {
 test("generateSelect", (t: test.Test) => {
   t.plan(1)
 
-  t.test("should return a select question", assert => {
+  t.test("should return a select question", (assert: test.Test) => {
     // Arrange
     const choices: string[] = ["option-1", "option-2", "option-3"]
     const message: string = "message"
