@@ -7,17 +7,11 @@ branches:
   only:
     - master
 
-cahce:
-  yarn: true
-  directories:
-    - node_modules
-
 notifications:
   email: false
 
 script:
-  - yarn test
+  - npm run test
 
 after_success:
-  - yarn test:report
   - yarn test:coverage
