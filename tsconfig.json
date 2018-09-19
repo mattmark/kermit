@@ -25,6 +25,9 @@
     ]
   },
   "include": [
+    "actions",
+    "bin",
+    "commands",
     "lib"
   ],
   "exclude": [

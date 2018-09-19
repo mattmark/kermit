@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node bin/kermit.js",
+    "start": "ts-node bin/kermit.ts",
     "lint": "tslint -t codeFrame 'lib/**/*.ts'",
     "test": "jest --config jest-config.json",
     "test:watch": "jest --config jest-config.json --watchAll",
