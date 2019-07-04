@@ -21,7 +21,9 @@
     "test:coverage": "jest --config jest-config.json --coverage",
     "coverage:report": "node --harmony_proxies node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "precommit": "lint-staged",
-    "prepush": "yarn test && yarn lint"
+    "prepush": "yarn test && yarn lint",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "lib/**/*.ts": [
@@ -93,6 +95,8 @@
     "node-emoji": "^1.8.1",
     "ora": "^3.0.0",
     "os-name": "^2.0.1",
-    "ts-node": "^7.0.1"
-  }
+    "ts-node": "^7.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
