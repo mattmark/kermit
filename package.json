@@ -89,7 +89,7 @@
     "@types/jest": "^23.3.2",
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
-    "inquirer": "^6.2.0",
+    "inquirer": "^7.0.5",
     "node-emoji": "^1.8.1",
     "ora": "^3.0.0",
     "os-name": "^2.0.1",
